@@ -15,6 +15,7 @@ from rich import box
 sys.path.append(str(Path(__file__).parent))
 
 from features.transactions.transactions import transaction_menu
+from features.budgets.budgets import budget_menu
 
 console = Console()
 
@@ -74,7 +75,7 @@ def main_menu() -> None:
         if choice == "Transactions":
             transaction_menu()
         elif choice == "Budgets":
-            show_coming_soon("Budget Management")
+            budget_menu()
         elif choice == "Analytics":
             show_coming_soon("Analytics")
         elif choice == "Export":
