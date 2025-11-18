@@ -18,6 +18,7 @@ from features.transactions.transactions import transaction_menu
 from features.budgets.budgets import budget_menu
 from features.analytics.analytics import analytics_menu
 from features.smart_assistant.smart_assistant import smart_assistant_menu
+from features.export.export import export_menu
 
 console = Console()
 
@@ -84,7 +85,7 @@ def main_menu() -> None:
         elif choice == "Smart Assistant":
             smart_assistant_menu()
         elif choice == "Export":
-            show_coming_soon("Export")
+            export_menu()
 
 
 def main() -> None:
