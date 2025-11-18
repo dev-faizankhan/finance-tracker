@@ -16,6 +16,7 @@ sys.path.append(str(Path(__file__).parent))
 
 from features.transactions.transactions import transaction_menu
 from features.budgets.budgets import budget_menu
+from features.analytics.analytics import analytics_menu
 
 console = Console()
 
@@ -77,7 +78,7 @@ def main_menu() -> None:
         elif choice == "Budgets":
             budget_menu()
         elif choice == "Analytics":
-            show_coming_soon("Analytics")
+            analytics_menu()
         elif choice == "Export":
             show_coming_soon("Export")
 
